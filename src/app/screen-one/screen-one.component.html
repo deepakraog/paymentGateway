@@ -1,0 +1,65 @@
+<div style="text-align:center;margin-top:30px;margin-bottom:20px">
+  <h4 style="color:red;">
+    Welcome to Payment Gateway
+  </h4>
+</div>
+	<div class="row">
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+			<p>Congrats you have saved <span style="color:red">$23</span></p>
+		</div>
+		<div style="text-align:right" class="col-lg-3 col-sm-3 col-md-3 col-xs-12 pull-sm-right pull-md-right pull-lg-right">
+			<p>Amount Payable <span style="color:red">$250</span></p>
+		</div>
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+		<div style="height:2px;width:100%;background-color: #ccc;margin-bottom:15px;" class="col-lg-6 col-sm-6 col-md-6 col-xs-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<small>You have choosen to pay through <b>Netbanking</b> option</small>
+		</div>
+
+	</div>
+	<div class="row" style="margin-top:15px;">
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<span><p>Select your bank to proceed:</p></span>
+			<span>
+				<select [(ngModel)]="bank">
+				  <option disabled>HDFC</option>
+				  <option disabled>AXIS</option>
+				  <option value='sg'>SG</option>
+				  <option disabled>SBI</option>
+				  <option disabled>SC</option>
+			    </select>
+		</span>
+		</div>
+
+	</div>
+	<div class="row">
+		<div style="margin-right:20px" class="col-lg-7 col-sm-7 col-md-7 col-xs-0"></div>
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				  <button type="button" class="btn btn-secondary custBtn" (click)="makePayment()">Pay</button>
+				  <button type="button" class="btn btn-secondary custBtn">Cancel</button>
+				</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:15px;margin-bottom:5px;">
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+		<div style="height:2px;width:100%;background-color: #ccc;margin-top:15px;margin-bottom:15px;" class="col-lg-6 col-sm-6 col-md-6 col-xs-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-0"></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<p>Note :</p>
+			<ul id="ulList">
+				<li>Please note that if you do not get a payment confirmation and the amount is deducted from your bank account, it will be refunded to your bank account within 48 working hours. </li>
+				<li>The amount refunded to you will reflect in your bank account within 7-10 working days epending on your bank.</li>
+			</ul>
+		</div>
+	</div>

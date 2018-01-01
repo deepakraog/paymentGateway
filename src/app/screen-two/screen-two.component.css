@@ -1,0 +1,11 @@
+.custBtn{
+	cursor:pointer;
+	background-color:rgb(255,113,17);
+	color:#ffffff;
+	font-weight:bold;
+
+}
+.custBtn:hover{
+	background-color:#ccc;
+	color:#000000;
+}
